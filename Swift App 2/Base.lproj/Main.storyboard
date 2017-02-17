@@ -34,17 +34,31 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2xS-vo-NjN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRW-Db-c2Z">
-                                <rect key="frame" x="86" y="200" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="ButtonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XSm-52-fTJ"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEF-Se-33M">
+                                <rect key="frame" x="137.5" y="181" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="KHq-nI-HXP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vAB-FR-f3n">
+                                <rect key="frame" x="137.5" y="231" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Qgl-89-CfO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="mEF-Se-33M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4LV-at-LSk"/>
+                            <constraint firstItem="vAB-FR-f3n" firstAttribute="top" secondItem="mEF-Se-33M" secondAttribute="bottom" constant="20" id="KSg-RL-dnG"/>
+                            <constraint firstItem="mEF-Se-33M" firstAttribute="top" secondItem="wun-vV-AhD" secondAttribute="bottom" constant="50" id="UFz-YS-7rn"/>
+                            <constraint firstItem="vAB-FR-f3n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cmM-vY-593"/>
                             <constraint firstItem="wun-vV-AhD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f6Q-sA-ohh"/>
                             <constraint firstItem="PLQ-9y-Gae" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fVI-MY-ifc"/>
                             <constraint firstItem="PLQ-9y-Gae" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="nF5-U3-omq"/>
@@ -52,6 +66,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="mEF-Se-33M" id="3MG-mF-sV2"/>
+                        <outlet property="text2" destination="vAB-FR-f3n" id="yLk-dN-QJP"/>
                         <outlet property="theLabel" destination="PLQ-9y-Gae" id="HMu-es-9MQ"/>
                     </connections>
                 </viewController>
