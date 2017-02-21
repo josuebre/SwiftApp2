@@ -26,12 +26,16 @@ class ViewController: UIViewController {
     
         
         
-     
-        print(text1.text!)
-        print(text2.text!)
+     let addition = false
         
-        theLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
-     
+        if addition {
+            theLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+            
+        } else {
+            theLabel.text = "Answer: \(Double(text1.text!)! - Double(text2.text!)!)"
+            
+        }
+        
     }
         
     
